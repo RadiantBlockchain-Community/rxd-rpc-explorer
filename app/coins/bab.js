@@ -365,7 +365,7 @@ module.exports = {
 			//console.log("Exchange Rate Response: " + JSON.stringify(responseBody));
 
 			var exchangedCurrencies = {
-				"BCHAUSDT": "usd"
+				"RXDAUSDT": "usd"
 			};
 
 			if (responseBody.data) {

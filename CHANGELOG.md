@@ -37,7 +37,7 @@
 - Charts: Use index mode
 
 Many thanks to Axel Gembe (@EchterAgo) for all the work he has done to improve
-the performance of the explorer so that it could be used also for BCH scalenet.
+the performance of the explorer so that it could be used also for RXD scalenet.
 
 #### v0.0.5
 ##### 2020-11-12
@@ -114,7 +114,7 @@ the performance of the explorer so that it could be used also for BCH scalenet.
 - Lots of minor bug fixes
 - New tool `/difficulty-history` showing a graph of the history of all difficulty adjustments
 - New tool to decode transactions script `decoder`
-- Add support for nodes that can retrieve block header (BCHN Unlimited and BCHN) and block (BCH Unlimited) by height rather than just hash
+- Add support for nodes that can retrieve block header (RXDN Unlimited and RXDN) and block (RADIANT) by height rather than just hash
 
 #### v0.0.2
 ##### 2020-02-05
@@ -123,7 +123,7 @@ the performance of the explorer so that it could be used also for BCH scalenet.
 - `5c44c15` Update miners metadata (#11) (Andrea Suisani)
 - `81599eb` Change "Donations" layout and display logic (#10) (Andrea Suisani)
 - `dc5d867` Fix a layout problem in tools box div when RPC show is false (#9) (Andrea Suisani)
-- `dd04bd8` Actually set BCH as the default ticker (#8) (Andrea Suisani)
+- `dd04bd8` Actually set RXD as the default ticker (#8) (Andrea Suisani)
 - `700395f` Add chain length to the details view for an unconfirmed transaction (#7) (Andrea Suisani)
 - `549e5ff` Remove RBF from transaction details view (#5) (Andrea Suisani)
 - `f3f4e44` Decide to turn on/off RPC tools in config.js (#6) (Andrea Suisani)

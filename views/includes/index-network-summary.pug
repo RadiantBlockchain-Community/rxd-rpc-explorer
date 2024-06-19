@@ -39,7 +39,7 @@ div.row.index-summary
 				tr
 					th.px-2.px-lg-0.px-xl-2
 						i.fas.fa-edit.mr-1.summary-icon
-						span.border-dotted(title="Estimate of the number of days the current BCH hashrate would require to produce all the hashes needed to re-write the entire blockchain.", data-toggle="tooltip") Chain Rewrite Days
+						span.border-dotted(title="Estimate of the number of days the current RXD hashrate would require to produce all the hashes needed to re-write the entire blockchain.", data-toggle="tooltip") Chain Rewrite Days
 					td.text-right.text-monospace
 						- var globalHashCount = parseInt("0x" + blockChainInfo.chainwork);
 						- var rewriteDays = globalHashCount / hashrate7d / 60 / 60 / 24;

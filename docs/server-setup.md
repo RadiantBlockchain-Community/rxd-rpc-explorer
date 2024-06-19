@@ -22,12 +22,12 @@ Copy content from [./bch-explorer.conf](./bch-explorer.conf) into `/etc/nginx/si
     pm2 start bin/www --name "bch-rpc-explorer"
 
 If you want your explorer being able to show transactions with a feerate lower than 1 sat/byte you should
-configure your full nodes to accept those on its mempool. To do that if you are using BCH unlimited you should
+configure your full nodes to accept those on its mempool. To do that if you are using RXD unlimited you should
 add this setting to `bitcoin.conf`
 
     minlimitertxfee=0.5
 
-If you are using BCHN you have to use this parameter instead:
+If you are using RXDN you have to use this parameter instead:
 
     minrelaytxfee=500
 

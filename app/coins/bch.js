@@ -4,15 +4,15 @@ Decimal8 = Decimal.clone({ precision:8, rounding:8 });
 var currencyUnits = [
 	{
 		type:"native",
-		name:"BCH",
+		name:"RXD",
 		multiplier:1,
 		default:true,
-		values:["", "bch", "BCH"],
+		values:["", "bch", "RXD"],
 		decimalPlaces:8
 	},
 	{
 		type:"native",
-		name:"mBCH",
+		name:"mRXD",
 		multiplier:1000,
 		values:["mbch"],
 		decimalPlaces:5
@@ -60,12 +60,12 @@ var currencyUnits = [
 
 module.exports = {
 	name:"Bitcoin Cash",
-	ticker:"BCH",
+	ticker:"RXD",
 	logoUrl:"/img/logo/bch.svg",
 	faviconUrl:"/img/logo/bch.ico",
 	siteTitle:"Bitcoin Cash Explorer",
 	siteTitleHtml:"Bitcoin Cash Explorer",
-	siteDescriptionHtml:"<b>BCH Explorer</b> is <a href='https://github.com/sickpig/bch-rpc-explorer). If you run your own [Bitcoin Cash Full Node](https://www.bitcoincash.org/nodes.html), **BCH Explorer** can easily run alongside it, communicating via RPC calls. See the project [ReadMe](https://github.com/sickpig/bch-rpc-explorer) for a list of features and instructions for running.",
+	siteDescriptionHtml:"<b>RXD Explorer</b> is <a href='https://github.com/sickpig/bch-rpc-explorer). If you run your own [Bitcoin Cash Full Node](https://www.bitcoincash.org/nodes.html), **RXD Explorer** can easily run alongside it, communicating via RPC calls. See the project [ReadMe](https://github.com/sickpig/bch-rpc-explorer) for a list of features and instructions for running.",
 	nodeTitle:"Bitcoin Cash Full Node",
 	nodeUrl:"https://www.bitcoinunlimited.info/download",
 	demoSiteUrl: "https://explorer.bitcoinunlimited.info",
@@ -93,7 +93,7 @@ module.exports = {
 	targetBlockTimeSeconds: 600,
 	targetBlockTimeMinutes: 10,
 	currencyUnits:currencyUnits,
-	currencyUnitsByName:{"BCH":currencyUnits[0], "mBCH":currencyUnits[1], "bits":currencyUnits[2], "sat":currencyUnits[3]},
+	currencyUnitsByName:{"RXD":currencyUnits[0], "mRXD":currencyUnits[1], "bits":currencyUnits[2], "sat":currencyUnits[3]},
 	baseCurrencyUnit:currencyUnits[3],
 	defaultCurrencyUnit:currencyUnits[0],
 	feeSatoshiPerByteBucketMaxima: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 50, 75, 100, 150],
@@ -717,21 +717,21 @@ module.exports = {
 	exchangeRateData:{
 		// see https://www.kraken.com/features/api#get-ticker-info for doc on that API
 		// endoint. What we need in "jq" syntax is:
-		// jq ."result"."BCHUSD"."c"[0] and jq ."result"."BCHEUR"."c"[0]
+		// jq ."result"."RXDUSD"."c"[0] and jq ."result"."RXDEUR"."c"[0]
 		// the above will return back the last trade closed at the time the url
 		// has been fetched
-		jsonUrl:"https://api.kraken.com/0/public/Ticker?pair=BCHUSD,BCHEUR",
+		jsonUrl:"https://api.kraken.com/0/public/Ticker?pair=RXDUSD,RXDEUR",
 		responseBodySelectorFunction:function(responseBody) {
 			//console.log("Exchange Rate Response: " + JSON.stringify(responseBody));
 
-			var exchangedCurrencies = ["BCHUSD", "BCHEUR"];
+			var exchangedCurrencies = ["RXDUSD", "RXDEUR"];
 
 			if (responseBody.result) {
 				var exchangeRates = {};
 
 				for (var i = 0; i < exchangedCurrencies.length; i++) {
 					if (responseBody.result[exchangedCurrencies[i]]) {
-						var key = exchangedCurrencies[i].replace("BCH", "");
+						var key = exchangedCurrencies[i].replace("RXD", "");
 						exchangeRates[key.toLowerCase()] = responseBody.result[exchangedCurrencies[i]]["c"][0];
 					}
 				}

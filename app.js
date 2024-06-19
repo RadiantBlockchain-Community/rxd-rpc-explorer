@@ -211,7 +211,7 @@ function onRpcConnectionVerified(getnetworkinfo, getblockchaininfo) {
 
 	global.getnetworkinfo = getnetworkinfo;
 
-	var bitcoinCoreVersionRegex = /^.*\/BCH Unlimited\:(.*)\/.*$/;
+	var bitcoinCoreVersionRegex = /^.*\/RADIANT\:(.*)\/.*$/;
 
 	var match = bitcoinCoreVersionRegex.exec(getnetworkinfo.subversion);
 	if (match) {
@@ -364,7 +364,7 @@ function refreshNetworkVolumes() {
 				debugLog(`Network volume: ${JSON.stringify(global.networkVolume)}`);
 
 			} else {
-				debugLog("Unable to load network volume, likely due to bitcoind version older than BCH Unlimited 1.8.0 (the first version to support getblockstats).");
+				debugLog("Unable to load network volume, likely due to bitcoind version older than RADIANT 1.8.0 (the first version to support getblockstats).");
 			}
 		});
 	});

@@ -192,7 +192,7 @@ function getRawTransaction(txid) {
 					return;
 				}
 
-				// ABC & BCHN do not set the confirmations property on unconfirmed TXs
+				// ABC & RXDN do not set the confirmations property on unconfirmed TXs
 				if (result.confirmations === undefined)
 					result.confirmations = 0;
 

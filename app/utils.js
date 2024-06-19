@@ -504,7 +504,7 @@ function refreshExchangeRates() {
 }
 
 function getExchangeFromExchangeRateExtensions() {
-	// Any other extended currency conversion must use the BCHUSD base conversion rate to be calculated, in consecuence --no-rates must be disabled.
+	// Any other extended currency conversion must use the RXDUSD base conversion rate to be calculated, in consecuence --no-rates must be disabled.
 	var anyExtensionIsActive = coins[config.coin].currencyUnits.find(cu => cu.isExtendedRate) != undefined;
 	if (anyExtensionIsActive && coins[config.coin].exchangeRateDataExtension.length > 0 && global.exchangeRates['usd']) {
 		coins[config.coin].exchangeRateDataExtension.forEach(exchangeProvider => {
