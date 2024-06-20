@@ -59,19 +59,18 @@ var currencyUnits = [
 ];
 
 module.exports = {
-	name:"Bitcoin Cash",
+	name:"Radiant",
 	ticker:"RXD",
-	logoUrl:"/img/logo/bch.svg",
-	faviconUrl:"/img/logo/bch.ico",
-	siteTitle:"Bitcoin Cash Explorer",
-	siteTitleHtml:"Bitcoin Cash Explorer",
-	siteDescriptionHtml:"<b>RXD Explorer</b> is <a href='https://github.com/sickpig/bch-rpc-explorer). If you run your own [Bitcoin Cash Full Node](https://www.bitcoincash.org/nodes.html), **RXD Explorer** can easily run alongside it, communicating via RPC calls. See the project [ReadMe](https://github.com/sickpig/bch-rpc-explorer) for a list of features and instructions for running.",
-	nodeTitle:"Bitcoin Cash Full Node",
-	nodeUrl:"https://www.bitcoinunlimited.info/download",
-	demoSiteUrl: "https://explorer.bitcoinunlimited.info",
+	logoUrl:"/img/logo/radiant_logo.png",
+	faviconUrl:"/img/logo/radiant_logo.png",
+	siteTitle:"Radiant Explorer",
+	siteTitleHtml:"Radiant Explorer",
+	siteDescriptionHtml:"<b>RXD Explorer</b> is <a href='https://github.com/RadiantBlockchain-Community/rxd-rpc-explorer). If you run your own [Radiant Full Node](https://github.com/RadiantBlockchain-Community/radiant-node), **RXD Explorer** can easily run alongside it, communicating via RPC calls. See the project [ReadMe](https://github.com/RadiantBlockchain-Community/rxd-rpc-explorer) for a list of features and instructions for running.",
+	nodeTitle:"Radiant Full Node",
+	nodeUrl:"https://github.com/RadiantBlockchain-Community/radiant-node",
+	demoSiteUrl: "https://explorer.radiant4people.com",
 	miningPoolsConfigUrls:[
-		"https://raw.githubusercontent.com/btccom/Blockchain-Known-Pools/master/pools.json",
-		"https://raw.githubusercontent.com/blockchain/Blockchain-Known-Pools/master/pools.json"
+		"https://raw.githubusercontent.com/btccom/Blockchain-Known-Pools/master/pools.json"
 	],
 	maxBlockSizeByNetwork: {
 		"main":   32000000,
@@ -93,12 +92,12 @@ module.exports = {
 	targetBlockTimeSeconds: 600,
 	targetBlockTimeMinutes: 10,
 	currencyUnits:currencyUnits,
-	currencyUnitsByName:{"RXD":currencyUnits[0], "mRXD":currencyUnits[1], "bits":currencyUnits[2], "sat":currencyUnits[3]},
+	currencyUnitsByName:{"RXD":currencyUnits[0], "mRXD":currencyUnits[1], "bits":currencyUnits[2], "photon":currencyUnits[3]},
 	baseCurrencyUnit:currencyUnits[3],
 	defaultCurrencyUnit:currencyUnits[0],
 	feeSatoshiPerByteBucketMaxima: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 50, 75, 100, 150],
 	genesisBlockHashesByNetwork:{
-		"main":    "000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f",
+		"main":    "0000000065d8ed5d8be28d6876b3ffb660ac2a6c0ca59e437e1f7a6f4e003fb4",
 		"test":    "000000000933ea01ad0ee984209779baaec3ced90fa3f408719526f8d77f4943",
 		"chip":    "000000001dd410c49a788668ce26751718cc797474d3152a5fc073dd44fd9f7b",
 		"test4":   "000000001dd410c49a788668ce26751718cc797474d3152a5fc073dd44fd9f7b",
@@ -106,7 +105,7 @@ module.exports = {
 		"regtest": "0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206"
 	},
 	genesisCoinbaseTransactionIdsByNetwork: {
-		"main":    "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b",
+		"main":    "027c3f6ae3858a75e2c287a915b3d82a50c48ee7021b715eedae9497f8ba2c37",
 		"test":    "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b",
 		"chip":   "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b",
 		"test4":   "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b",
@@ -143,8 +142,8 @@ module.exports = {
 				}
 			],
 			"blockhash": "000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f",
-			"time": 1230988505,
-			"blocktime": 1230988505
+			"time": 1655692970,
+			"blocktime": 1655692970
 		},
 		"test": {
 			"hex": "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff4d04ffff001d0104455468652054696d65732030332f4a616e2f32303039204368616e63656c6c6f72206f6e206272696e6b206f66207365636f6e64206261696c6f757420666f722062616e6b73ffffffff0100f2052a01000000434104678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5fac00000000",

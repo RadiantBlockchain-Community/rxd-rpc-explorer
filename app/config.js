@@ -21,7 +21,7 @@ if (rpcCred.cookie && !rpcCred.username && !rpcCred.password && fs.existsSync(rp
 
 var cookieSecret = process.env.BTCEXP_COOKIE_SECRET
  || (rpcCred.password && crypto.createHmac('sha256', JSON.stringify(rpcCred))
-                               .update('btc-rpc-explorer-cookie-secret').digest('hex'))
+                               .update('rxd-rpc-explorer-cookie-secret').digest('hex'))
  || "0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f";
 
 
@@ -182,11 +182,11 @@ module.exports = {
           title:"Related Sites",
           links:[
             // TODO: find better images for this URLs, in the mean time use bch.svg
-            {name: "Bitcoin Unlimited", url:"https://www.bitcoinunlimited.info", imgUrl:"/img/logo/bu.png"},
-            {name: "Bitcoin Cash Nodes", url:"https://cashnodes.io", imgUrl:"/img/logo/bch.svg"},
-            {name: "RXD PoW Monitoring", url:"https://fork.lol", imgUrl:"/img/logo/fork.png"},
-            {name: "RXD Specification", url:"https://reference.cash", imgUrl:"/img/logo/refcash.ico"},
-            {name: "Bitcoin Cash Node", url:"https://bitcoincashnode.org/", imgUrl:"/img/logo/bchn.png"},
+            {name: "Radiant", url:"https://www.radiantblockchain.org", imgUrl:"/img/logo/radiant_logo.png"},
+            {name: "Radiant4people", url:"https://radiant4people.com", imgUrl:"/img/logo/radiant_logo.png"},
+            {name: "X", url:"https://x.com/RXD_Community", imgUrl:"/img/logo/x-logo-black.png"},
+            {name: "Discord", url:"https://discord.com/invite/radiantblockchain", imgUrl:"/img/logo/discord.png"},
+            {name: "More Links", url:"https://linktr.ee/radiantblockchain", imgUrl:"/img/logo/linktr.png"},
           ]
         }
       ]
@@ -202,7 +202,7 @@ module.exports = {
   donations:{
     addresses:{
       coins:["RXD"],
-      sites:{"RXD":"https://www.bitcoinunlimited.info"},
+      sites:{"RXD":"https://www.radiantblockchain.org"},
 
       "RXD":{address:"bitcoincash:pq6snv5fcx2fp6dlzg7s0m9zs8yqh74335tzvvfcmq"}
     }
