@@ -479,7 +479,7 @@ module.exports = {
 			blockHash: "0000000065d8ed5d8be28d6876b3ffb660ac2a6c0ca59e437e1f7a6f4e003fb4",
 			summary: "The Radiant Genesis Block.",
 			alertBodyHtml: "This is the first block in the Radiant blockchain, known as the 'Genesis Block'.</a>.",
-			referenceUrl: "https://en.bitcoin.it/wiki/Genesis_block"
+			referenceUrl: "https://github.com/RadiantBlockchain/radiant-node/releases/tag/v1.1.3"
 		},
 		{
 			type: "tx",
@@ -492,7 +492,7 @@ module.exports = {
 		},
 		{
 			type: "tx",
-			date: "2022-05-2",
+			date: "2024-05-2",
 			chain: "main",
 			txid: "8f9e33d99bffdd80a11149b1d12c30ddb1a8352996607cfabec8ab92b2491b2e",
 			summary: "Radiant 1.3.0 - Energy",
