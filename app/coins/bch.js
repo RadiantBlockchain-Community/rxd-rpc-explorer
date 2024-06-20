@@ -482,19 +482,21 @@ module.exports = {
 			referenceUrl: "https://github.com/RadiantBlockchain/radiant-node/releases/tag/v1.1.3"
 		},
 		{
-			type: "tx",
+			type: "blockheight",
 			date: "2022-11-25",
 			chain: "main",
-			txid: "8f9e33d99bffdd80a11149b1d12c30ddb1a8352996607cfabec8ab92b2491b2e",
+			blockHeight: 62000,
+			blockHash: "000000000000032e1e3151298a2914c1334d9b41d6490f1754d038085f20c597",
 			summary: "Radiant 1.2.0 Zeus",
 			alertBodyHtml: "New OP Codes",
 			referenceUrl: "https://github.com/RadiantBlockchain/radiant-node/releases/tag/v1.2.0"
 		},
 		{
-			type: "tx",
+			type: "blockheight",
 			date: "2024-05-2",
 			chain: "main",
-			txid: "8f9e33d99bffdd80a11149b1d12c30ddb1a8352996607cfabec8ab92b2491b2e",
+			blockHeight: 214555,
+			blockHash: "0000000000000005bdb33400688d1267fef81acbdb2ceae336030524e76821e6",
 			summary: "Radiant 1.3.0 - Energy",
 			alertBodyHtml: "New OP Codes",
 			referenceUrl: "https://github.com/RadiantBlockchain/radiant-node/releases/tag/v1.3.0"
