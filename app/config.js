@@ -203,7 +203,7 @@ module.exports = {
       coins:["RXD"],
       sites:{"RXD":"https://www.radiantblockchain.org"},
 
-      "RXD":{address:"bitcoincash:pq6snv5fcx2fp6dlzg7s0m9zs8yqh74335tzvvfcmq"}
+      "RXD":{address:"16YyBmAbhm4PYQ1R9eD9d6hrhdCF2LTZyp"}
     }
   }
 
