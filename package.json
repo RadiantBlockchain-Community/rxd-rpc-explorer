@@ -19,7 +19,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sickpig/bch-rpc-explorer.git"
+    "url": "git+https://github.com/RadiantBlockchain-Community/rxd-rpc-explorer.git"
   },
   "dependencies": {
     "@bitauth/libauth": "^1.19.1",

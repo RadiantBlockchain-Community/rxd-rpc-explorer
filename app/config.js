@@ -184,7 +184,7 @@ module.exports = {
             // TODO: find better images for this URLs, in the mean time use bch.svg
             {name: "Radiant", url:"https://www.radiantblockchain.org", imgUrl:"/img/logo/radiant_logo.png"},
             {name: "Radiant4people", url:"https://radiant4people.com", imgUrl:"/img/logo/radiant_logo.png"},
-            {name: "X", url:"https://x.com/RXD_Community", imgUrl:"/img/logo/x-logo-black.png"},
+            {name: "X", url:"https://x.com/RXD_Community", imgUrl:"/img/logo/x-logo-white.png"},
             {name: "Discord", url:"https://discord.com/invite/radiantblockchain", imgUrl:"/img/logo/discord.png"},
             {name: "More Links", url:"https://linktr.ee/radiantblockchain", imgUrl:"/img/logo/linktr.png"},
           ]
