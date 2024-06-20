@@ -473,244 +473,31 @@ module.exports = {
 	historicalData: [
 		{
 			type: "blockheight",
-			date: "2009-01-03",
+			date: "2022-06-20",
 			chain: "main",
 			blockHeight: 0,
-			blockHash: "000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f",
-			summary: "The Bitcoin Cash Genesis Block.",
-			alertBodyHtml: "This is the first block in the Bitcoin blockchain, known as the 'Genesis Block'. This block was mined by Bitcoin's creator Satoshi Nakamoto. You can read more about <a href='https://en.bitcoin.it/wiki/Genesis_block'>the genesis block</a>.",
+			blockHash: "0000000065d8ed5d8be28d6876b3ffb660ac2a6c0ca59e437e1f7a6f4e003fb4",
+			summary: "The Radiant Genesis Block.",
+			alertBodyHtml: "This is the first block in the Radiant blockchain, known as the 'Genesis Block'.</a>.",
 			referenceUrl: "https://en.bitcoin.it/wiki/Genesis_block"
 		},
 		{
 			type: "tx",
-			date: "2009-01-03",
+			date: "2022-11-25",
 			chain: "main",
-			txid: "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b",
-			summary: "The coinbase transaction of the Genesis Block.",
-			alertBodyHtml: "This transaction doesn't really exist! This is the coinbase transaction of the <a href='/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f'>Bitcoin Genesis Block</a>. For more background about this special-case transaction, you can read <a href='https://github.com/bitcoin/bitcoin/issues/3303'>this brief discussion</a> among some of the <a href='https://bitcoin.org'>Bitcoin</a> developers.",
-			referenceUrl: "https://github.com/bitcoin/bitcoin/issues/3303"
+			txid: "8f9e33d99bffdd80a11149b1d12c30ddb1a8352996607cfabec8ab92b2491b2e",
+			summary: "Radiant 1.2.0 Zeus",
+			alertBodyHtml: "New OP Codes",
+			referenceUrl: "https://github.com/RadiantBlockchain/radiant-node/releases/tag/v1.2.0"
 		},
 		{
 			type: "tx",
-			date: "2009-10-12",
+			date: "2022-05-2",
 			chain: "main",
-			txid: "7dff938918f07619abd38e4510890396b1cef4fbeca154fb7aafba8843295ea2",
-			summary: "First bitcoin traded for fiat currency.",
-			alertBodyHtml: "In this first-known BTC-to-fiat transaction, 5,050 BTC were exchanged for 5.02 USD, at an effective exchange rate of ~0.001 USD/BTC.",
-			referenceUrl: "https://twitter.com/marttimalmi/status/423455561703624704"
-		},
-		{
-			type: "blockheight",
-			date: "2017-08-01",
-			chain: "main",
-			blockHeight: 478559,
-			blockHash: "000000000000000000651ef99cb9fcbe0dadde1d424bd9f15ff20136191a5eec",
-			summary: "First block after UAHF.",
-			referenceUrl: "https://twitter.com/btcfork/status/892449023893831680"
-		},
-		{
-			type: "blockheight",
-			date: "2012-11-28",
-			chain: "main",
-			blockHeight: 210000,
-			blockHash: "000000000000048b95347e83192f69cf0366076336c639f9b7228e9ba171342e",
-			summary: "First block of subsidy era #2 (25 BTC).",
-			referenceUrl: "https://github.com/BitcoinUnlimited/BitcoinUnlimited/blob/dev/src/validation/validation.cpp#L1258"
-		},
-		{
-			type: "blockheight",
-			date: "2016-07-09",
-			chain: "main",
-			blockHeight: 420000,
-			blockHash: "000000000000000002cce816c0ab2c5c269cb081896b7dcb34b8422d6b74ffa1",
-			summary: "First block of subsidy era #3 (12.5 BTC).",
-			referenceUrl: "https://github.com/BitcoinUnlimited/BitcoinUnlimited/blob/dev/src/validation/validation.cpp#L1258"
-		},
-		{
-			type: "blockheight",
-			date: "2020-04-08",
-			chain: "main",
-			blockHeight: 630000,
-			blockHash: "00000000000000000169a496bfafa84ad8d3ef8039fc9e391a8eada67996b9c8",
-			summary: "First block of subsidy era #4 (6.25 BTC).",
-			referenceUrl: "https://github.com/BitcoinUnlimited/BitcoinUnlimited/blob/dev/src/validation/validation.cpp#L1258"
-		},
-		{
-			type: "tx",
-			date: "2014-06-16",
-			chain: "main",
-			txid: "143a3d7e7599557f9d63e7f224f34d33e9251b2c23c38f95631b3a54de53f024",
-			summary: "Star Wars: A New Hope",
-			referenceUrl: ""
-		},
-		{
-			type: "tx",
-			date: "2010-05-22",
-			chain: "main",
-			txid: "a1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d",
-			summary: "The 'Bitcoin Pizza' transaction.",
-			alertBodyHtml: "This is the famous 'Bitcoin Pizza' transaction, one of the earliest 'real-world' transactions, in which 10,000 BTC was paid for 2 large pizzas worth ~41 USD (at an effective exchange rate of ~$0.04/BTC).",
-			referenceUrl: "https://bitcointalk.org/index.php?topic=137.0"
-		},
-		{
-			type: "tx",
-			date: "2011-05-18",
-			chain: "main",
-			txid: "5d80a29be1609db91658b401f85921a86ab4755969729b65257651bb9fd2c10d",
-			summary: "Destroyed bitcoin.",
-			referenceUrl: "https://bitcointalk.org/index.php?topic=7253.msg184414#msg184414",
-			referenceUrl2: "https://www.reddit.com/r/Bitcoin/comments/7mhoks/til_in_2011_a_user_running_a_modified_mining/"
-		},
-		{
-			type: "blockheight",
-			date: "2009-01-12",
-			chain: "main",
-			blockHeight: 170,
-			blockHash: "00000000d1145790a8694403d4063f323d499e655c83426834d4ce2f8dd4a2ee",
-			summary: "First block containing a (non-coinbase) transaction.",
-			alertBodyHtml: "This block comes 9 days after the genesis block and is the first to contain a transfer of bitcoin. Before this block all blocks contained only coinbase transactions which mint new bitcoin. <br/>See transaction #1 (f4184fc…) below for more info.",
-			referenceUrl: "https://bitcointalk.org/index.php?topic=91806.msg1012234#msg1012234"
-		},
-		{
-			type: "tx",
-			date: "2009-01-12",
-			chain: "main",
-			txid: "f4184fc596403b9d638783cf57adfe4c75c605f6356fbc91338530e9831e9e16",
-			summary: "The first transfer of bitcoin.",
-			alertBodyHtml: "This transaction represents the first ever transfer of bitcoin from one person to another. It also has the added distinction of being (one of?) the only known transfers of bitcoin from Satoshi Nakamoto, in this case sending bitcoin to Hal Finney as a test."
-		},
-		{
-			type:"address",
-			date:"2011-12-03",
-			chain: "main",
-			address:"1JryTePceSiWVpoNBU8SbwiT7J4ghzijzW",
-			summary:"Brainwallet address for 'Satoshi Nakamoto'",
-			referenceUrl:"https://twitter.com/MrHodl/status/1041448002005741568",
-			alertBodyHtml:"This address was generated from the SHA256 hash of 'Satoshi Nakamoto' as example of the 'brainwallet' concept."
-		},
-		{
-			type: "tx",
-			date: "2010-11-14",
-			chain: "main",
-			txid: "e3bf3d07d4b0375638d5f1db5255fe07ba2c4cb067cd81b84ee974b6585fb468",
-			summary: "Duplicated coinbase transaction #1",
-			referenceUrl: "https://bitcoin.stackexchange.com/questions/38994/will-there-be-21-million-bitcoins-eventually/38998#38998",
-			alertBodyHtml: "This is one of 2 'duplicate coinbase' transactions. An early bitcoin bug (fixed by <a href='https://github.com/bitcoin/bips/blob/master/bip-0030.mediawiki'>BIP30</a>) allowed identical coinbase transactions - a newer duplicate would overwrite older copies. This transaction was the coinbase transaction for <a href='/block-height/91722'>Block #91,722</a> and, ~16 hours later, <a href='/block-height/91880'>Block #91,880</a>. The 50 BTC claimed as the coinbase for block 91,722 were also overwritten and lost."
-		},
-		{
-			type: "tx",
-			date: "2010-11-14",
-			chain: "main",
-			txid: "d5d27987d2a3dfc724e359870c6644b40e497bdc0589a033220fe15429d88599",
-			summary: "Duplicated coinbase transaction #2",
-			referenceUrl: "https://bitcoin.stackexchange.com/questions/38994/will-there-be-21-million-bitcoins-eventually/38998#38998",
-			alertBodyHtml: "This is one of 2 'duplicate coinbase' transactions. An early bitcoin bug (fixed by <a href='https://github.com/bitcoin/bips/blob/master/bip-0030.mediawiki'>BIP30</a>) allowed identical coinbase transactions - a newer duplicate would overwrite older copies. This transaction was the coinbase transaction for <a href='/block-height/91812'>Block #91,812</a> and, ~3 hours later, <a href='/block-height/91842'>Block #91,842</a>. The 50 BTC claimed as the coinbase for block 91,812 were also overwritten and lost."
-		},
-
-		// testnet
-		{
-			type: "blockheight",
-			date: "2011-02-02",
-			chain: "test",
-			blockHeight: 0,
-			blockHash: "000000000933ea01ad0ee984209779baaec3ced90fa3f408719526f8d77f4943",
-			summary: "The Bitcoin (regtest) Genesis Block.",
-			alertBodyHtml: "This is the first block in the Bitcoin blockchain, known as the 'Genesis Block'. You can read more about <a href='https://en.bitcoin.it/wiki/Genesis_block'>the genesis block</a>.",
-			referenceUrl: "https://en.bitcoin.it/wiki/Genesis_block"
-		},
-		{
-			type: "tx",
-			date: "2011-02-02",
-			chain: "test",
-			txid: "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b",
-			summary: "The coinbase transaction of the Genesis Block.",
-			alertBodyHtml: "This transaction doesn't really exist! This is the coinbase transaction of the <a href='/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f'>Bitcoin Genesis Block</a>. For more background about this special-case transaction, you can read <a href='https://github.com/bitcoin/bitcoin/issues/3303'>this brief discussion</a> among some of the <a href='https://bitcoin.org'>Bitcoin</a> developers.",
-			referenceUrl: "https://github.com/bitcoin/bitcoin/issues/3303"
-		},
-
-		// regtest
-		{
-			type: "blockheight",
-			date: "2011-02-02",
-			chain: "regtest",
-			blockHeight: 0,
-			blockHash: "0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206",
-			summary: "The Bitcoin (regtest) Genesis Block.",
-			alertBodyHtml: "This is the first block in the Bitcoin blockchain, known as the 'Genesis Block'. You can read more about <a href='https://en.bitcoin.it/wiki/Genesis_block'>the genesis block</a>.",
-			referenceUrl: "https://en.bitcoin.it/wiki/Genesis_block"
-		},
-		{
-			type: "tx",
-			date: "2011-02-02",
-			chain: "regtest",
-			txid: "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b",
-			summary: "The coinbase transaction of the Genesis Block.",
-			alertBodyHtml: "This transaction doesn't really exist! This is the coinbase transaction of the <a href='/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f'>Bitcoin Genesis Block</a>. For more background about this special-case transaction, you can read <a href='https://github.com/bitcoin/bitcoin/issues/3303'>this brief discussion</a> among some of the <a href='https://bitcoin.org'>Bitcoin</a> developers.",
-			referenceUrl: "https://github.com/bitcoin/bitcoin/issues/3303"
-		},
-
-		// chipnet
-		{
-			type: "blockheight",
-			date: "2022-11-15",
-			chain: "chip",
-			blockHeight: 121957,
-			blockHash:
-				"0000000056087dee73fb66178ca70da89dfd0be098b1a63cf6fe93934cd04c78",
-			summary: "May 2023 Upgrade Chipnet Activation",
-			alertBodyHtml:
-				"The May 2023 Upgrade for Bitcoin Cash activated on chipnet shortly after 12 UTC, November 15, 2022. Chipnet activates upgrades 6 months early, giving developers months to build with new upgrades before they're active on the main network. Chipnet offers more certainty, wider testing, and stronger launches. 🚀",
-			referenceUrl: "https://blog.bitjson.com/bitcoin-cash-upgrade-2023/",
-		},
-		{
-			type: "tx",
-			date: "2022-11-15",
-			chain: "chip",
-			txid: "856c7b8a7607b7302cbe21a03944ead936e4486bd1f3e030b7f1b53af0338f0f",
-			summary: "An 87-byte transaction",
-			alertBodyHtml:
-				"Before the May 2023 Upgrade activated, transactions were required to be at least 100 bytes, wasting space in some contract applications. This is the first transaction smaller than 100 bytes mined on chipnet.",
-			referenceUrl: "https://twitter.com/bitjson/status/1592576796205387776",
-		},
-		{
-			type: "tx",
-			date: "2022-11-15",
-			chain: "chip",
-			txid: "a0152b142c7acafbc2af757754797dfde62582db3ed0edd380a0e977cae0f777",
-			summary: "CashTokens Demo: Double-Category Genesis",
-			alertBodyHtml:
-				"A two-category token genesis transaction: every output type, every token amount encoding length, one minting and one immutable non-fungible token (NFT). Note, this transaction can also be located using the chipnet CashAccount: <code>CashTokens#121957</code>.",
-			referenceUrl: "https://twitter.com/bitjson/status/1592576797467893760",
-		},
-		{
-			type: "tx",
-			date: "2022-11-15",
-			chain: "chip",
-			txid: "b84debf788680257285e8a67e3a52592bc17089f1dce997c0f8255b4e9608c41",
-			summary: "CashTokens Demo: NFT Minting",
-			alertBodyHtml:
-				'Genesis for a third category; merges all fungible tokens from the first CashTokens Demo transaction, placing the max amount in an NFT-locked covenant marked with "reserved supply" (using a mutable token); mints a variety of NFTs.',
-			referenceUrl: "https://twitter.com/bitjson/status/1592576798675546112",
-		},
-		{
-			type: "tx",
-			date: "2022-11-15",
-			chain: "chip",
-			txid: "670a0402bd50af7fee349511221e5b92eb90dcc4e1d3dce451e228fc1c6aa39a",
-			summary: "First NFT Spend",
-			alertBodyHtml:
-				'The first spend of an NFT on chipnet. A minimal transaction moving an immutable NFT (capability: "none") from one address to another. The NFT has a commitment of <code>0xf09f8c8e</code> (utf8: <code>🌎</code>).',
-			referenceUrl: "https://twitter.com/bitjson/status/1592576800340574208",
-		},
-		{
-			type: "tx",
-			date: "2022-11-15",
-			chain: "chip",
-			txid: "142e5adef124019b4929e7656fc20b7a061987e6d340d47a3753cee17eb6049e",
-			summary: "NFT-unlocked Covenant Spend",
-			alertBodyHtml:
-				"An NFT-locked covenant is unlocked using an NFT. The NFTs commitment is <code>0x68656c6c6f</code> (utf8: <code>hello</code>) which only enables the release of 1000 FTs per block. (Inspect the contract to see that the <code>🌎</code> NFT unconditionally unlocks the vault.)",
-			referenceUrl: "https://twitter.com/bitjson/status/1592576802118959104",
+			txid: "8f9e33d99bffdd80a11149b1d12c30ddb1a8352996607cfabec8ab92b2491b2e",
+			summary: "Radiant 1.3.0 - Energy",
+			alertBodyHtml: "New OP Codes",
+			referenceUrl: "https://github.com/RadiantBlockchain/radiant-node/releases/tag/v1.3.0"
 		},
 	],
 	exchangeRateData:{
