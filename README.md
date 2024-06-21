@@ -18,9 +18,8 @@ Live demo available at: [https://explorer.bitcoinunlimited.info](https://explore
 * Analysis tools for viewing stats on blocks, transactions, and miner activity
 * View JSON content used to generate most pages
 * Search by transaction ID, block hash/height, and address
-* Optional transaction history for addresses by querying from ElectrumX and blockchair.com
+* Optional transaction history for addresses by querying from ElectrumX.
 * Mempool summary, with fee, size, and age breakdowns
-* RPC command browser and terminal
 
 # Changelog / Release notes
 
@@ -32,17 +31,17 @@ The below instructions are geared toward RXD, but can be adapted easily to other
 
 ## Prerequisites
 
-1. Install and run a full, archiving node - [instructions](https://www.bitcoinunlimited.info/download). Ensure that your bitcoin node has full transaction indexing enabled (`txindex=1`) and the RPC server enabled (`server=1`) adding the flags into the bitcoind executable.
-2. Synchronize your node with the Bitcoin network.
-3. Run bch-rpc-explorer passing the cookie route based on the defined path to store files download with RXD-Unlimited. (Check cli arguments section)
+1. Install and run a full, archiving node - [instructions](https://github.com/RadiantBlockchain/radiant-node). Ensure that your Radiant node has full transaction indexing enabled (`txindex=1`) and the RPC server enabled (`server=1`) adding the flags into the radiantd executable.
+2. Synchronize your node with the Radiant network.
+3. Run rxd-rpc-explorer passing the cookie route based on the defined path to store files download with RXD-Unlimited. (Check cli arguments section)
 4. "Recent" version of Node.js (8+ recommended).
-5. You could also run an [ElectrsCash](https://github.com/bitcoinunlimited/ElectrsCash) and configure the explorer to received data from it (optional)
+5. You could also run an [Electrumx](https://github.com/RadiantBlockchain-Community/electrumx) and configure the explorer to received data from it (optional)
 6. You need to use nodejs version 12.9 or higher due to the use of [Promise.allSettled()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled) method
 
 ## Instructions
 
 ```bash
-npm install -g bch-rpc-explorer
+npm install -g rxd-rpc-explorer
 bch-rpc-explorer
 ```
 
@@ -55,7 +54,7 @@ See [configuration](#configuration) for details.
 ### Configuration
 
 Configuration options may be passed as environment variables
-or by creating an env file at `~/.config/bch-rpc-explorer.env`
+or by creating an env file at `~/.config/rxd-rpc-explorer.env`
 or at `.env` in the working directory.
 See [.env-sample](.env-sample) for a list of the options and details for formatting `.env`.
 
@@ -63,23 +62,18 @@ You may also pass options as CLI arguments, for example:
 
 ```bash
 UNIX
-bch-rpc-explorer --port 8080 --bitcoind-port 18443 --bitcoind-cookie ~/.bitcoin/regtest/.cookie
+rxd-rpc-explorer --port 8080 --bradiantd-port 18443 --bradiantd-cookie ~/.radiant/regtest/.cookie
 
 WINDOWS
-bch-rpc-explorer --bitcoind-cookie C:\your-bch-unlimited-path\.cookie
+rxd-rpc-explorer --bitcoind-cookie C:\your-radiant-path\.cookie
 ```
 
-See `bch-rpc-explorer --help` for the full list of CLI options.
+See `rxd-rpc-explorer --help` for the full list of CLI options.
 
 ## Run via Docker
 
-1. `docker build -t bch-rpc-explorer .`
-2. `docker run -p 3002:3002 -it bch-rpc-explorer`
-
-# Support
-
-* [bitcoincash:pq6snv5fcx2fp6dlzg7s0m9zs8yqh74335tzvvfcmq](bitcoincash:pq6snv5fcx2fp6dlzg7s0m9zs8yqh74335tzvvfcmq)
-
+1. `docker build -t rxd-rpc-explorer .`
+2. `docker run -p 3002:3002 -it rxd-rpc-explorer`
 
 [npm-ver-img]: https://img.shields.io/npm/v/bch-rpc-explorer.svg?style=flat
 [npm-ver-url]: https://www.npmjs.com/package/bch-rpc-explorer

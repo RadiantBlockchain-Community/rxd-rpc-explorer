@@ -12,7 +12,7 @@ const args = require('meow')(`
 
       -b, --bitcoind-uri <uri>       connection URI for bitcoind rpc (overrides the options below)
       -H, --bitcoind-host <host>     hostname for bitcoind rpc [default: 127.0.0.1]
-      -P, --bitcoind-port <port>     port for bitcoind rpc [default: 8332]
+      -P, --bitcoind-port <port>     port for bitcoind rpc [default: 7332]
       -c, --bitcoind-cookie <path>   path to bitcoind cookie file [default: ~/.bitcoin/.cookie]
       -u, --bitcoind-user <user>     username for bitcoind rpc [default: none]
       -w, --bitcoind-pass <pass>     password for bitcoind rpc [default: none]
