@@ -59,6 +59,9 @@ var snippetActionsRouter = require('./routes/snippetRouter.js');
 
 var app = express();
 
+// Add when use proxys like nginx
+//app.set('trust proxy', 1);
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 
