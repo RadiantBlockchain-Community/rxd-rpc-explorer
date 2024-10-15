@@ -981,8 +981,8 @@ router.get("/tx/:transactionId", function(req, res, next) {
 });
 
 const addressLimiter = rateLimit({
-	       windowMs: 1 * 60 * 1000,
-	       max: 1,
+	       windowMs: 1 * 5 * 1000,
+	       max: 5,
 	       standardHeaders: true,
 	       legacyHeaders: false,
 });
