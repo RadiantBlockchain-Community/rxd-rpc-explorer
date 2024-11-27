@@ -68,13 +68,13 @@ module.exports = {
 	siteDescriptionHtml:"<b>RXD Explorer</b> is <a href='https://github.com/RadiantBlockchain-Community/rxd-rpc-explorer). If you run your own [Radiant Full Node](https://github.com/RadiantBlockchain-Community/radiant-node), **RXD Explorer** can easily run alongside it, communicating via RPC calls. See the project [ReadMe](https://github.com/RadiantBlockchain-Community/rxd-rpc-explorer) for a list of features and instructions for running.",
 	nodeTitle:"Radiant Full Node",
 	nodeUrl:"https://github.com/RadiantBlockchain-Community/radiant-node",
-	demoSiteUrl: "https://explorer.radiant4people.com",
+	demoSiteUrl: "https://explorer.radiantblockchain.org",
 	miningPoolsConfigUrls:[
 		"https://raw.githubusercontent.com/btccom/Blockchain-Known-Pools/master/pools.json"
 	],
 	maxBlockSizeByNetwork: {
-		"main":   32000000,
-		"test":   32000000,
+		"main":  240000000,
+		"test":  240000000,
 		"chip":    2000000,
 		"test4":   2000000,
 		"scale": 256000000
@@ -82,15 +82,15 @@ module.exports = {
 	difficultyAdjustmentBlockOffset: 1008,
 	difficultyAdjustmentBlockCount: 4,
 	maxSupplyByNetwork: {
-		"main": new Decimal(20999817.31308491), // ref: https://bitcoin.stackexchange.com/a/38998
-		"test": new Decimal(21000000),
-		"chip": new Decimal(21000000),
-		"test4": new Decimal(21000000),
-		"scale": new Decimal(21000000),
-		"regtest": new Decimal(21000000)
+		"main": new Decimal(21000000000), // ref: https://bitcoin.stackexchange.com/a/38998
+		"test": new Decimal(21000000000),
+		"chip": new Decimal(21000000000),
+		"test4": new Decimal(21000000000),
+		"scale": new Decimal(21000000000),
+		"regtest": new Decimal(21000000000)
 	},
-	targetBlockTimeSeconds: 600,
-	targetBlockTimeMinutes: 10,
+	targetBlockTimeSeconds: 300,
+	targetBlockTimeMinutes: 5,
 	currencyUnits:currencyUnits,
 	currencyUnitsByName:{"RXD":currencyUnits[0], "mRXD":currencyUnits[1], "bits":currencyUnits[2], "photon":currencyUnits[3]},
 	baseCurrencyUnit:currencyUnits[3],
@@ -508,11 +508,11 @@ module.exports = {
 		// jq ."result"."RXDUSD"."c"[0] and jq ."result"."RXDEUR"."c"[0]
 		// the above will return back the last trade closed at the time the url
 		// has been fetched
-		jsonUrl:"https://api.kraken.com/0/public/Ticker?pair=RXDUSD,RXDEUR",
+		jsonUrl:"https://api.kraken.com/0/public/Ticker?pair=RXDUSD",
 		responseBodySelectorFunction:function(responseBody) {
 			//console.log("Exchange Rate Response: " + JSON.stringify(responseBody));
 
-			var exchangedCurrencies = ["RXDUSD", "RXDEUR"];
+			var exchangedCurrencies = ["RXDUSD"];
 
 			if (responseBody.result) {
 				var exchangeRates = {};
